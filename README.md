@@ -8,4 +8,5 @@
 This project can serve as an excellent example for aspiring ML engineers to learn how to showcase their skills and experience in a clear and concise manner to potential employers or clients.
 ![My CV](assets/imgs/cv.png "Stuart's Resume")
 
-Honorable mentions:
+## Honorable mentions:
+#### Free CSS.com
