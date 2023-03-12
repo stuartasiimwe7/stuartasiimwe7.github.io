@@ -1,4 +1,5 @@
 # my_resume
+![Alt text](assets\imgs\cv.png "Stuart's Resume")
 An online Professional Portfolio
  This project contains a comprehensive overview of the a ML Engineer's expertise, including their technical skills, educational background, work experience, and projects. 
 
