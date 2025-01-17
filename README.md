@@ -6,7 +6,6 @@
  In this repository included is the engineer's resume in various formats, such as PDF and PNG, and also demonstrates their proficiency in data analysis, modeling, and software development.
 
 This project can serve as an excellent example for aspiring ML engineers to learn how to showcase their skills and experience in a clear and concise manner to potential employers or clients.
-![My CV](assets/imgs/cv.jpg "Stuart's Resume")
 
 ## Honorable mentions:
 #### Free CSS.com
