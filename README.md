@@ -7,5 +7,5 @@
 
 This project can serve as an excellent example for aspiring ML engineers to learn how to showcase their skills and experience in a clear and concise manner to potential employers or clients.
 
-## Honorable mentions:
+## Honorable Mentions:
 #### Free CSS.com
