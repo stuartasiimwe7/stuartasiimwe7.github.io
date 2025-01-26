@@ -409,6 +409,24 @@
                         <p class="post-details">
                             <span>Interest</span>
                             <span onclick="increaseInterestCount()" class="cursor-pointer" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <span id="interest-count">30</span></span>
+                        onclick="increaseInterestCount()" class="cursor-pointer" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <span id="interest-count">30</span></span>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', (event) => {
+                                var countElement = document.getElementById('interest-count');
+                                var savedCount = localStorage.getItem('interestCount');
+                                if (savedCount) {
+                                    countElement.innerText = savedCount;
+                                }
+                            });
+
+                            function increaseInterestCount() {
+                                var countElement = document.getElementById('interest-count');
+                                var count = parseInt(countElement.innerText);
+                                count += 1;
+                                countElement.innerText = count;
+                                localStorage.setItem('interestCount', count);
+                            }
+                        </script>
                         </p>
                         <script>
                             function increaseInterestCount() {
