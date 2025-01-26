@@ -407,9 +407,16 @@
                         <h4 class="title">AWS Inventory Manager</h4>
 
                         <p class="post-details">
-                            <a href="#">Interest</a>
-                            <a href="#"><i class="ti-heart text-danger"></i> 30</a>
+                            <a href="#" id="interest-link" onclick="increaseInterestCount()">Interest</a>
+                            <a href="#"><i class="ti-heart text-danger"></i> <span id="interest-count">30</span></a>
                         </p>
+                        <script>
+                            function increaseInterestCount() {
+                                var countElement = document.getElementById('interest-count');
+                                var count = parseInt(countElement.innerText);
+                                countElement.innerText = count + 1;
+                            }
+                        </script>
                         
                         <p>A powerful and intuitive inventory management dashboard built with Next.js and styled with Tailwind CSS, 
                             designed to streamline inventory operations for businesses of all sizes. It features seamless state management powered by Redux Toolkit and a robust Node.js backend.</p>
