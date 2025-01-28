@@ -32,6 +32,20 @@
             <div class="header-content">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Stuart</h1>
+                <h1 class="header-title" id="dynamic-name"></h1>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const name = "Stuart";
+                        let i = 0;
+                        const interval = setInterval(() => {
+                            document.getElementById("dynamic-name").innerText = name.slice(0, i + 1);
+                            i++;
+                            if (i === name.length) {
+                                clearInterval(interval);
+                            }
+                        }, 200);
+                    });
+                </script>
                 <h6 class="header-mono" >Software Engineer | AI/ML </h6>
 
                 <div class="dropdown"></div>
