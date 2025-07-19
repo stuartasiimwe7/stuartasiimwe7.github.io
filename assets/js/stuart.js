@@ -12,20 +12,26 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 // Tabbed navigation
-const tabButtons = document.querySelectorAll('[data-select-item]');
-const tabPanels = document.querySelectorAll('.tab-panel');
+const tabButtons = document.querySelectorAll('[data-tab]');
+const panels = document.querySelectorAll('.tab-panel');
 
-tabButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    // Remove active classes
-    tabButtons.forEach(b => b.classList.remove('active'));
-    tabPanels.forEach(p => p.classList.remove('active'));
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Update active button
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
 
-    // Add active to clicked tab and its panel
-    btn.classList.add('active');
-    document.querySelector(`.${btn.dataset.tab}`).classList.add('active');
+    // Show corresponding panel
+    const tab = button.getAttribute('data-tab');
+    panels.forEach(panel => {
+      panel.classList.remove('active');
+      if (panel.classList.contains(tab)) {
+        panel.classList.add('active');
+      }
+    });
   });
 });
+
 
 // smooth scroll
 $(document).ready(function(){
