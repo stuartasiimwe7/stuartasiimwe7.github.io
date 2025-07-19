@@ -11,6 +11,21 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+// Tabbed navigation
+const tabButtons = document.querySelectorAll('[data-select-item]');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active classes
+    tabButtons.forEach(b => b.classList.remove('active'));
+    tabPanels.forEach(p => p.classList.remove('active'));
+
+    // Add active to clicked tab and its panel
+    btn.classList.add('active');
+    document.querySelector(`.${btn.dataset.tab}`).classList.add('active');
+  });
+});
 
 // smooth scroll
 $(document).ready(function(){
