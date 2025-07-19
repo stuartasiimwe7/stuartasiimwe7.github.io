@@ -11,6 +11,15 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+// Tabbed Navigation
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+.select-item button.active {
+  background-color: #d63031;
+  color: white;
+  font-weight: bold;
+}
 
 
 // Core
