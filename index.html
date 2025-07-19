@@ -1,513 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="An online portfolio">
-    <meta name="author" content="Stuart Asiimwe">
-    <meta name="keywords" content="Stuart Asiimwe, Stuart, Asiimwe, Stuart's Portfolio, Stuart's Resume, Stuart's CV, Stuart's Works, Stuart's Projects, Stuart's Contact, Asiimwe's Portfolio, Asiimwe's Resume, Asiimwe's CV, Asiimwe's Works, Asiimwe's Projects, Asiimwe's Contact">
-    <title>Stuart Asiimwe | Portfolio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/stuart.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-        <!-- Font Awesome CDN -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <!-- My favicons-->
-    <link rel="icon" type="image/x-icon" sizes="48x48" href="/assets/imgs/fin_favicon.png">
-    
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Stuart Asiimwe | Portfolio</title>
+  <meta name="description" content="An online portfolio">
+  <meta name="author" content="Stuart Asiimwe">
+  <meta name="keywords" content="Stuart Asiimwe, Stuart, Asiimwe, Stuart's Portfolio, Stuart's Resume, Stuart's CV, Stuart's Works, Stuart's Projects, Stuart's Contact, Asiimwe's Portfolio, Asiimwe's Resume, Asiimwe's CV, Asiimwe's Works, Asiimwe's Projects, Asiimwe's Contact">
+
+  <!-- Favicons -->
+  <link href="assets/img/fin_favicon.png" rel="icon">
+  <link href="assets/img/favicon_my.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3 center">
-                <li class="social-item"><a class="social-link text-light" href="https://www.twitter.com/stuartasiimwe7" title="Twitter"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/stuartasiimwe" title="LinkedIn"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                <li class="social-item"> <a class="social-link text-light" href="https://github.com/stuartasiimwe7" title="GitHub"> <i class="fab fa-github" aria-hidden="true"></i> </a> </li>
-            </ul>  
+<body class="index-page">
 
-            <div class="header-content">
-                <h4 class="header-subtitle">Hello, I am</h4>
-                <h1 class="header-title">
-                    <span id="dynamic-name"></span>
-                </h1>
-                <h6 class="header-mono">Software Engineer | AI/ML</h6>
-            
-                <div class="dropdown"></div>
-                <button class="btn btn-primary btn-rounded dropdown-toggle" type="button" id="resumeDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="ti-printer pr-2"></i>Print Resume
-                </button>
-                <div class="dropdown-menu" aria-labelledby="resumeDropdown">
-                    <a class="dropdown-item" href="assets/imgs/cv_en.jpg" download="Stuart_Asiimwe_Resume_EN.jpg">English</a>
-                    <a class="dropdown-item" href="assets/imgs/cv_kr.pdf" download="Stuart_Asiimwe_Resume_KR.pdf">Korean</a>
-                </div>
-            </div>
-            
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const name = "Stuart";
-                    let i = 0;
-                    const interval = setInterval(() => {
-                        document.getElementById("dynamic-name").innerText = name.slice(0, i + 1);
-                        i++;
-                        if (i === name.length) {
-                            clearInterval(interval);
-                        }
-                    }, 300); // typing speed here
-                });
-            </script>            
-        </div>
-    </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
-        <div class="container">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#resume" class="nav-link">Career</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav brand">
-                    <li><img src="assets/imgs/small.jpg" alt="" class="brand-img"></li>
-                    <li class="brand-txt">
-                        <h5 class="brand-title">Stuart Asiimwe</h5>
-                        <div class="brand-subtitle">ML Engineer | SW Developer</div>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#works" class="nav-link">WorkDepot</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#projects" class="nav-link">Ongoing Works</a>
-                    </li>
-                    <li class="nav-item last-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--Intro Section-->
-    <section class="section" id="resume">
-        <div class="container">>
-        <div id="about" class="row about-section">
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">A passionate Software Engineer <br>Located in Seoul, South Korea</h5>
-                <p class="mt-20">Strong problem-solving abilities and a passion for applying the potential of machine learning in creating innovative user solutions.</p>
-                <p>Experienced in developing software applications, analyzing data, and building predictive models using machine learning frameworks.</p>
-                
-            </div>
-            <!--Personal Info-->
-            <!--Personal Info-
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                        <li><i class="fas fa-birthday-cake"></i>   September 8<sup>th</sup></li>
-                        <li><i class="fas fa-envelope"></i>   <a href="mailto:stuartasiimwe7@naver.com">stuartasiimwe7@naver.com</a></li>
-                        <li><i class="fab fa-skype"></i>   <a href="skype:stuartgabriel90?call">stuartasiimwe7</a></li>
-                        <li><i class="fas fa-map-marker-alt"></i> 222 Wangsimni-ro, Seongdong-gu - Seoul, South Korea</li>
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link text-light" href="https://www.twitter.com/stuartasiimwe7" title="Twitter"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/stuartasiimwe" title="LinkedIn"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"> <a class="social-link text-light" href="https://github.com/stuartasiimwe7" title="GitHub"> <i class="fab fa-github" aria-hidden="true"></i> </a> </li>
-                </ul>  
-            </div>
-            -->
-            <!--My Expertis-->
-            <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6><b>Machine Learning and Data Analysis</b></h6>
-                        <p class="subtitle"> 
-                            Experience in building predictive models, analyzing datasets, and applying machine learning frameworks like PyTorch and TensorFlow.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6><b>Reverse Engineering</b></h6>
-                        <p class="subtitle">Experienced in using tools such as IDA Pro and OllyDbg for in-depth binary analysis and low-level debugging, to identify vulnerabilities and enhance system security.</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6><b>Software Development</b></h6>
-                        <p class="subtitle">Proficient in Python, JavaScript, Java and familiarity with C++, with a focus on developing efficient, scalable, and reliable software.</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-<<<<<<< HEAD
-    <!--About Section-->
-    <section class="section" id="resume">
-        <div class="container">
-            <h2 class="mb-5"><span class="text-danger">My</span> Career</h2>
-
-            <!-- Tab Navigation -->
-            <ul class="select-list">
-            <li class="select-item"><button data-tab="education" class="active">Education</button></li>
-            <li class="select-item"><button data-tab="experience">Experience</button></li>
-            <li class="select-item"><button data-tab="skills">Skill Set</button></li>
-            </ul>
-
-            <!-- Tabbed Card Container -->
-            <div class="row">
-            <div class="col-lg-12">
-                <div class="card">
-                <div class="card-body">
-                    <div class="tab-panel education active">
-                        <div class="card-body">
-                            <h6 class="title text-danger">Master of Computer Science</h6>
-                            <b>Machine Learning & AI</b>
-                            <ul class="subtitle">
-                                <li>Optimizing machine learning models by developing efficient algorithms using frameworks like TensorFlow and PyTorch.</li>
-                                <li>Deployed end-to-end machine learning pipelines using tools such as TensorFlow Serving and FastAPI.</li>
-                                <li>Reverse engineering and vulnerability analysis for IoT and embedded systems using industry-standard tools like IDA Pro, ensuring secure system implementations.</li>
-                                <li>Committed to continuous R&D, staying up-to-date with the latest advancements in machine learning and software engineering.</li>
-                            </ul>
-                            <hr>
-                            
-                            <h6 class="title text-danger">Bachelor of Computer Science</h6>
-                            
-                            <ul class="subtitle">
-                                <li>Strong foundation in data structures, algorithms, and software engineering principles.</li>
-                                <li>Proficiency in programming languages such as Python, C++, and JavaScript.</li>
-                                <li>Completed projects in database management, operating systems, and web application development.</li>
-                                <li>Gained experience in collaborative problem-solving through team-based assignments.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="tab-panel experience">
-                        <div class="card-body">
-                            <h6 class="title text-danger">2023 - Present</h6>
-                            <P><b>Machine Learning Research Assistant</b></P>
-                            <ul class="subtitle">
-                                <li>Conducted research on advanced machine learning algorithms.</li>
-                                <li>Developed and optimized models for various applications.</li>
-                                <li>Collaborated in teams to integrate machine learning solutions into production systems.</li>
-                                <li>Utilized Python, TensorFlow, and PyTorch for model development, evaluation and deployment.</li>
-                                <li>Set up and maintained CI/CD pipelines using Jenkins and GitLab CI.</li>
-                            </ul>
-                            
-                            <hr>
-
-                            <h6 class="title text-danger">05/2019 - 08/2019</h6>
-                            <P><b>Software Engineer - Intern</b></P>
-                            <ul class="subtitle">
-                                <li>Contributed to the development and maintenance of web apps.</li>
-                                <li>Collaborated with senior engineers to implement new features.</li>
-                                <li>Gained hands-on experience in the DevOps.</li>
-                                <li>Utilized technologies such as HTML, CSS, JavaScript, and React for front-end development.</li>
-                                <li>Worked with Node.js and MongoDB for back-end development.</li>
-                            </ul>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Skills</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                            <h6><b>Programming</b></h6>
-                                <p>C++, Python, JavaScript</p>
-                            <h6><b>Frontend</b></h6>
-                                <p>React, Next.js</p>
-                            <h6><b>Backend</b></h6>
-                                <p>Node.js with Express</p>
-                            <h6><b>Databases</b></h6>
-                                <p>MongoDB, PostgreSQL, MySQL</p>
-                            <h6><b>AI & Machine Learning</b></h6><p></p>
-                                <p>TensorFlow, Scikit-learn, OpenCV</p>
-                            <h6><b>DevOps & Cloud</b></h6>
-                                <p>AWS (EC2, S3, RDS), Docker, Jenkins, Kubernetes</p>
-                        </div>
-                    </div>
-<<<<<<< HEAD
-=======
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="languages">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="card">
-                       <div class="card-header">
-                            <div class="pull-left">
-                                <h4 class="mt-2">Languages</h4>
-                                <span class="line"></span>  
-                            </div>
-                        </div>
-                        <div class="card-body pb-2">
-                           <h5>English :</h5><h6>Native/Bilingual Proficiency</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" title="English proficiency" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
-                            </div>
-                            
-                            <h5>Korean :</h5><h6>Business/Professional Proficiency</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" title="Korean proficiency" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;"></div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
->>>>>>> origin/init
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section bg-dark text-center">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-6 col-lg-3">
-                    <div class="row ">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">45k+</h1>
-                            <p class="text-light mb-1">Hours of Development</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">100+</h1>
-                            <p class="text-light mb-1">Projects Finished</p>
-                        </div>
-                    </div>
-                </div>
-                <!--
-                <div class="col-md-6 col-lg-3">
-                    <div class="row">
-                        <div class="col-5 text-right text-light border-right py-3">
-                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
-                        </div>
-                        <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">Many</h1>
-                            <p class="text-light mb-1">Satisfied Collaborations</p>
-                        </div>
-                    </div>
-                </div>
-                -->
-            </div>
-        </div>
-    </section>
-<!--Projects Section-->
-
-    <section class="section" id="projects">
-        <div class="container">
-            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Projects</h2>
-            <!-- blog-card -->
-            <div class="blog-card">
-                <div class="img-holder">
-                    <img src="assets/imgs/project4.png" alt="AS StockFusion">
-                </div>
-                <div class="content-holder">
-                    <h4 class="title">SA StockFusion</h4>
-                    <p class="post-details">
-                        <span>Interest</span>
-                        <span onclick="increaseInterestCount('interest-count-1')" class="cursor-pointer"><i class="ti-heart text-danger"></i> <span id="interest-count-1">30</span></span>
-                    </p>
-                    <p>A powerful and intuitive inventory management dashboard built with Next.js and styled with Tailwind CSS, designed to streamline inventory operations for businesses of all sizes. It features seamless state management powered by Redux Toolkit and a robust Node.js backend.</p>
-                    <p>Integrated with AWS services such as EC2, RDS, and Amplify, the application delivers exceptional scalability, reliability, and performance.</p>
-                    <a href="https://github.com/stuartasiimwe7/AWSInventoryManager" class="read-more" rel="noopener noreferrer">GitHub Link <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-            <!-- blog-card -->
-            <div class="blog-card">
-                <div class="img-holder">
-                    <img src="assets/imgs/project3.jpg" alt="AI-Powered Chat System">
-                </div>
-                <div class="content-holder">
-                    <h4 class="title">AI-powered Chat System</h4>
-                    <p class="post-details">
-                        <span>Interest</span>
-                        <span onclick="increaseInterestCount('interest-count-2')" class="cursor-pointer"><i class="ti-heart text-danger"></i> <span id="interest-count-2">53</span></span>
-                    </p>
-                    <p>AI-Powered Chat System is a project designed to simulate natural and engaging human interactions.</p>
-                    <p>It uses Natural Language Processing (NLP) models to provide intelligent, context-aware responses, making it suitable for chatbots, virtual assistants, and automated customer service systems.</p>
-                    <a href="https://github.com/stuartasiimwe7/Python-Chatbot" class="read-more" rel="noopener noreferrer">GitHub Link <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-            <!-- blog-card -->
-            <div class="blog-card">
-                <div class="img-holder">
-                    <img src="assets/imgs/project2.jpg" alt="Illustrating-Python-via-Bioinformatics">
-                </div>
-                <div class="content-holder">
-                    <h4 class="title">Illustrating Python via Bioinformatics</h4>
-                    <p class="post-details">
-                        <span>Interest</span>
-                        <span onclick="increaseInterestCount('interest-count-3')" class="cursor-pointer"><i class="ti-heart text-danger"></i> <span id="interest-count-3">12</span></span>
-                    </p>
-                    <p>Illustrating Python via Bioinformatics is a project aimed at demonstrating the power of Python in solving complex biological data analysis problems, such as DNA sequence alignment, protein structure prediction, and gene expression analysis, using efficient algorithms and visualization techniques.</p>
-                    <p>This open-source project fosters global collaboration, inviting developers and bioinformaticians to contribute and improving its functionality.</p>
-                    <a href="https://github.com/stuartasiimwe7/Illustrating-Python-via-Bioinformatics" class="read-more" rel="noopener noreferrer">GitHub Link <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-            <!-- blog-card -->
-            <div class="blog-card">
-                <div class="img-holder">
-                    <img src="assets/imgs/project5.jpg" alt="Computer Aided Detection of Breast Cancer">
-                </div>
-                <div class="content-holder">
-                    <h4 class="title">Computer Aided Detection of Breast Cancer</h4>
-                    <p class="post-details">
-                        <span>Interest</span>
-                        <span onclick="increaseInterestCount('interest-count-4')" class="cursor-pointer"><i class="ti-heart text-danger"></i> <span id="interest-count-4">27</span></span>
-                    </p>
-                    <p>This was my undergraduate Capstone Project, about a cutting-edge web application designed to assist physicians in breast cancer screening by automating the detection of invasive ductal carcinoma (IDC) using mammograms.</p>
-                    <p>The application uses the mini-MIAS dataset and employs transfer learning with pre-trained ImageNet weights of the VGG architecture to develop a robust CNN.</p>
-                    <p>The frontend was built with React.js, while the backend integrates the trained models using TensorFlow & Keras.</p>
-                    <a href="https://www.academia.edu/45485486/Cognitive_Computer_Aided_Detection_of_Breast_Cancer_Using_Mammograms" class="read-more" rel="noopener">Read the full research paper <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-            <!-- blog-card -->
-            <div class="blog-card">
-                <div class="img-holder">
-                    <img src="assets/imgs/project6.jpg" alt="DFS Algorithm">
-                </div>
-                <div class="content-holder">
-                    <h4 class="title">DFS Algorithm</h4>
-                    <p class="post-details">
-                        <span>Interest</span>
-                        <span onclick="increaseInterestCount('interest-count-5')" class="cursor-pointer"><i class="ti-heart text-danger"></i> <span id="interest-count-5">11</span></span>
-                    </p>
-                    <p>I developed a SHAP-Based Dynamic Feature Engineering Algorithm, the research for which was published at the International Conference on Convergent & Smart Systems.</p>
-                    <p>This algorithm uses SHapley Additive exPlanations—a concept rooted in game theory that fairly distributes contributions to predictions, assigning feature importance with precision. It dynamically selects the most relevant features for individual models in ensemble classifiers and generates synthetic features to mitigate class imbalance.</p>
-                    <p>This approach improves both classification accuracy and interpretability (xAI). Built using Python and scikit-learn, it is particularly suited for applications in cybersecurity, healthcare and finance, where accurate and explainable predictions are critical.</p>
-                    <a href="https://github.com/stuartasiimwe7/SHAP-Based-Feature-Selection-in-Ensemble-Classifiers" class="read-more" rel="noopener noreferrer">GitHub Link <i class="ti-angle-double-right"></i></a>
-                </div>
-            </div><!-- end of blog wrapper -->
-        </div>
-    </section>
-    <script>
-        function increaseInterestCount(id) {
-            var countElement = document.getElementById(id);
-            var count = parseInt(countElement.innerText);
-            countElement.innerText = count + 1;
-        }
-    </script>
-
-    <div class="section contact" id="contact">
-        <div id="map" class="map"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-card">
-                        <h4 class="contact-title">Send a message</h4>
-                        <form action="">
-                            <div class="form-group">
-                                <input  class="form-control" type="text" placeholder="Name *" required>
-                            </div>
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email *" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="message" placeholder="Message *" rows="7" required></textarea>
-                            </div>
-                            <div class="form-group ">
-                                <button type="submit" class="form-control btn btn-primary" >Send Message</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="contact-info-card">
-                        <h4 class="contact-title">Get in touch</h4>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-map-alt icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Address :<br> <span class="text-muted">서울시 성동구 왕십리로 222 한양대학교.</span></h6>
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-1 pt-1 mr-1">
-                                <i class="ti-envelope icon-md"></i>
-                            </div>
-                            <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <span class="text-muted">stuartasiimwe7@naver.com</span></h6>
-                            </div>
-                        </div>
-                        <ul class="social-icons pt-4">
-                            <li class="social-item"><a class="social-link text-light" href="https://www.twitter.com/stuartasiimwe7" title="Twitter"><i class="ti-twitter" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/stuartasiimwe" title="LinkedIn"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                            <li class="social-item"> <a class="social-link text-light" href="https://github.com/stuartasiimwe7" title="GitHub"> <i class="fab fa-github" aria-hidden="true"></i> </a> </li>
-                        </ul> 
-                    </div>
-                </div>
-            </div>
-
-        </div>
+    <div class="profile-img">
+      <img src="assets/img/small.jpg" alt="" class="img-fluid rounded-circle">
     </div>
-    
-    <footer class="footer py-3">
-        <div class="container">
-            <p class="small mb-0 text-light text-center">
-                <script>document.write(new Date().getFullYear())</script> &copy; Copyright</i>  @   <a href="https://stuartasiim.wep.app" rel="noopener"><span class="text-danger" title="Stuart's Portfolio">Stuart Asiimwe</span></a> 
-            </p>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Stuart Asiimwe</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> Skill Set</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const name = "Stuart Asiimwe";
+        let i = 0;
+        const interval = setInterval(() => {
+        document.getElementById("dynamic-name").innerText = name.slice(0, i + 1);
+        i++;
+        if (i === name.length) {
+          clearInterval(interval);
+        }
+        }, 200); // typing speed here
+      });
+      </script>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="header-subtitle">Hello, I am</h2>
+        <h1 class="header-title">
+          <span id="dynamic-name"></span>
+          <p> </p>
+        </h1>
+        <p></p>
+        <p>
+          <h4 class="header-mono">Software Engineer | AI/ML</h4>
+        </p>
+      </div>
+
+    </section>
+    <!-- End Hero Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row skills-content skills-animation">
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">89%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+          </div>
+          <div class="col-lg-6">
+            <div class="progress">
+              <span class="skill"><span>React</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Next.js</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Node.js with Express</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+            <div class="progress">
+              <span class="skill"><span>Machine Learning & AI</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+        </div>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+      </div>
 
-    <!-- Isotope  -->
-    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
-    
-    <!-- Google maps -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+    </section><!-- /Skills Section -->
 
-    <!-- stuart js -->
-    <script src="assets/js/stuart.js"></script>
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>A passionate Software Engineer Located in Seoul, South Korea. <br> Strong problem-solving abilities and a passion for applying the potential of machine learning in creating innovative user solutions.<br>Experienced in developing software applications, analyzing data, and building predictive models using machine learning frameworks.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Stuart Asiimwe</h4>
+              <p><em>Innovative Software & ML Engineer with 5+ years of experience designing and developing user-centered software from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Seoul, South Korea</li>
+                <li>(010) 8308-48xx</li>
+                <li>stuartasiimwe7@naver.com</li>
+              </ul>
+            </div>
+            <!-- Edn Resume Item -->
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Computer Science</h4>
+              <h5>2023 - 2025</h5>
+              <p><em>Hanyang University, Seoul, South Korea</em></p>
+              <ul class="subtitle">
+                <li>Focused on advancing the field of Machine Learning by designing custom algorithms for explainable AI (see portfolio).</li>
+                <li>Pioneered cutting-edge research in adversarial ML, Secure and explainable AI.</li>
+                <li>Published and presented research work in both internal and International symposiums, driving adoption of novel techniques within industry and academia, through peer-reviewed experimentation and open-source contributions.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Computer Science</h4>
+              <h5>2017 - 2021</h5>
+              <p><em>Ndejje University, Kampala, Uganda</em></p>
+              <ul class="subtitle">
+                <li><b>Graduated Top of Class — 1st Class Honors</b></li>
+                <li>Built a solid foundation in algorithms, data structures, systems programming, and software architecture.</li>
+                <li>Fluent in Python, C++, and JavaScript—built 10+ academic and real-world projects ranging from operating systems to full-stack web platforms.</li>
+                <li>Delivered robust database systems, custom OS components, and full-stack web applications from scratch (see portfolio).</li>
+                <li>Led collaborative, high-impact team projects of 5~8 members, through innovative problem-solving, delivering two major software projects ahead of schedule with 98% code coverage.</li>
+              </ul>
+            </div>
+            <!-- Edn Resume Item -->
+
+          </div>
+          <!-- End Resume Item -->
+          <!-- Professional Experience -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>AI Research Engineer</h4>
+              <h5>03/2025 - Present</h5>
+              <p><em>SeoulTech, Seoul, South Korea</em></p>
+              <p><em>Pioneering research and development of AI-driven digital twins that simulate microbial and metabolic systems.</em></p>
+              <ul class="subtitle">
+              <li>Boosted compound discovery speed by over 3× and streamlined hypothesis testing across 0+ experiments.</li>
+              <li>Integrated multi-omics datasets into dynamic simulations, reducing testing cycles by 40% and improving predictive accuracy of compound-target interactions by 25%.</li>
+              <li>Built modular ML frameworks for real-time bioprocess monitoring using TensorFlow, PyTorch, and FastAPI—achieving &gt;90% reliability and sub-200ms latency across edge and cloud deployments.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Machine Learning Research Assistant</h4>
+              <h5>03/2023 - 02/2025</h5>
+              <p><em>Hanyang University, Seoul, South Korea</em></p>
+              <p><em>Conducted research on advanced ML algorithms and model optimization using Python, TensorFlow, and PyTorch.</em></p>
+              <ul class="subtitle">
+                <li>Improved existing architectures boosting model accuracy by up to 15% and reducing training time by 30% across projects.</li>
+                <li>Deployed scalable end-to-end machine learning pipelines using TensorFlow Serving and FastAPI, reducing model inference latency by 10% and improving throughput by 25%.</li>
+                <li>Conducted hands-on reverse engineering and security audits on IoT and embedded systems using IDA Pro and Ghidra, identifying various critical vulnerabilities and reducing exploit risk by 70%.</li>
+                <li>Set up and maintained CI/CD pipelines using Jenkins and GitLab CI.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Software Engineer - Intern</h4>
+              <h5>05/2019 - 08/2019</h5>
+              <p><em>Stratcom, Kampala, Uganda</em></p>
+              <p><em>Contributed to the development and maintenance of web applications.</em></p>
+              <ul class="subtitle">
+              <li>Collaborated with senior engineers to implement new features.</li>
+              <li>Gained hands-on experience in DevOps practices.</li>
+              <li>Utilized HTML, CSS, JavaScript, and React for front-end development.</li>
+              <li>Worked with Node.js and MongoDB for back-end development.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+              </ul>
+            </div><!-- Edn Resume Item -->
+          </div>
+          <!-- End Professional Experience -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Product</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-books">Books</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>App 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
+              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
 
 </body>
+
 </html>
