@@ -11,6 +11,27 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+// Tabbed navigation
+const tabButtons = document.querySelectorAll('[data-tab]');
+const panels = document.querySelectorAll('.tab-panel');
+
+tabButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Update active button
+    tabButtons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+
+    // Show corresponding panel
+    const tab = button.getAttribute('data-tab');
+    panels.forEach(panel => {
+      panel.classList.remove('active');
+      if (panel.classList.contains(tab)) {
+        panel.classList.add('active');
+      }
+    });
+  });
+});
+
 
 // smooth scroll
 $(document).ready(function(){
