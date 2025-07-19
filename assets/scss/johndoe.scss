@@ -16,10 +16,27 @@
 .tab-panel.active { display: block; }
 
 .select-item button.active {
-  background-color: #d63031;
+  background-color: #dc3545;
   color: white;
   font-weight: bold;
+  border: none;
+  padding: 10px 20px;
 }
+.select-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.select-item button {
+  background-color: transparent;
+  border: 1px solid #dc3545;
+  color: #dc3545;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 
 
 // Core
