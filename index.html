@@ -255,10 +255,12 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-        <div class="isotope-layout" data-default-filter=".filter-app" data-layout="masonry" data-sort="original-order">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter=".filter-app" class="filter-active">ML</li>
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">ML</li>
+            <li data-filter=".filter-product">Web Apps</li>
             <li data-filter=".filter-branding">SW Dev</li>
             <li data-filter=".filter-books">Research</li>
           </ul><!-- End Portfolio Filters -->
@@ -266,7 +268,7 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/project4.png" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -329,7 +331,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/project5.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -381,7 +383,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/project8.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
@@ -393,24 +395,12 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/project9.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>BlackBoxML</h4>
                   <p>A Python package that auto-patches tf.keras.Model.fit() to log training metrics automatically, with zero changes to user code. Published on <a href="https://pypi.org/project/blackboxml/">PyPI</a>.</p>
-                    <a href="https://badge.fury.io/py/blackboxml" target="_blank" rel="noopener" title="PyPI version">
-                      <img src="https://badge.fury.io/py/blackboxml.svg" alt="PyPI version" style="height: 20px;">
-                    </a>
-                    <a href="https://pypi.org/project/blackboxml/" target="_blank" rel="noopener" title="Supported Python versions">
-                      <img src="https://img.shields.io/pypi/pyversions/blackboxml.svg" alt="Python versions" style="height: 20px;">
-                    </a>
-                    <a href="https://github.com/stuartasiimwe7/blackboxml/actions/workflows/pages/pages-build-deployment" target="_blank" rel="noopener" title="Deployment status">
-                      <img src="https://github.com/stuartasiimwe7/blackboxml/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Deployment status" style="height: 20px;">
-                    </a>
-                    <a href="https://pepy.tech/project/blackboxml" target="_blank" rel="noopener" title="PyPI downloads">
-                      <img src="https://static.pepy.tech/personalized-badge/blackboxml?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLUE&right_color=GREEN&left_text=Downloads" alt="PyPI Downloads" style="height: 20px;">
-                    </a>
                   <a href="assets/img/portfolio/project9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://github.com/stuartasiimwe7/blackboxml" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
