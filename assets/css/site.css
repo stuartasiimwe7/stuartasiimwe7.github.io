@@ -18,16 +18,16 @@
   color-scheme: light;
 }
 [data-theme="dark"] {
-  --bg: #0b1120;
-  --surface: #111827;
-  --surface-soft: #172033;
-  --text: #edf4fa;
-  --muted: #a6b5c5;
-  --tag-text: #b8c5d2;
-  --line: #26364a;
-  --accent: #60c9ee;
-  --accent-strong: #8ad8f3;
-  --accent-soft: #112d3b;
+  --bg: #18181b;
+  --surface: #18181b;
+  --surface-soft: #27272a;
+  --text: #f4f4f5;
+  --muted: #9f9fa9;
+  --tag-text: #d4d4d8;
+  --line: #3f3f4666;
+  --accent: #00d3bd;
+  --accent-strong: #46ecd5;
+  --accent-soft: #00d3bd1a;
   --page-gutter: #000;
   --shadow: 0 14px 32px rgba(0, 0, 0, .25);
   --shadow-nav: 0 8px 24px rgba(0, 0, 0, .3);
