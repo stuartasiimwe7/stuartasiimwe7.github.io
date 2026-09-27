@@ -1,0 +1,14 @@
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Temporary and generated files
+*.tmp
+*.log
+__pycache__/
+node_modules/
+coverage/
+dist/
