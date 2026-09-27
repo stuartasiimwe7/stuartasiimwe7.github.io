@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Monitoring of Mushroom Mycelial Growth - Stuart Asiimwe</title>
+    <meta
+      name="description"
+      content="Stuart Asiimwe's computer-vision contribution to research on monitoring mushroom mycelial growth in liquid culture."
+    />
+    <link
+      rel="canonical"
+      href="https://stuartasiimwe.com/research/mushroom-mycelia.html"
+    />
+    <meta
+      property="og:title"
+      content="AI Monitoring of Mushroom Mycelial Growth"
+    />
+    <meta
+      property="og:description"
+      content="Computer vision for automated growth tracking in liquid culture."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://stuartasiimwe.com/research/mushroom-mycelia.html"
+    />
+    <meta
+      property="og:image"
+      content="https://stuartasiimwe.com/assets/img/portfolio/mushroom-mycelia-poster.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="../assets/img/fin_favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/site.css" />
+    <script>
+      if (
+        localStorage.getItem("portfolio-theme") === "dark" ||
+        (!localStorage.getItem("portfolio-theme") &&
+          matchMedia("(prefers-color-scheme:dark)").matches)
+      )
+        document.documentElement.dataset.theme = "dark";
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="nav-home" href="../index.html" aria-label="Home">
+        <img src="../assets/img/small.webp" alt="" width="900" height="600" />
+      </a>
+      <div class="nav-wrap">
+        <nav class="site-nav" data-nav aria-label="Primary">
+          <a href="../index.html">Home</a>
+          <a href="../work/index.html">Work</a>
+          <a href="index.html" aria-current="page">Research</a>
+          <a href="../writing/index.html">Writing</a>
+          <a href="../about.html">About</a>
+        </nav>
+      </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        data-menu-toggle
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-label="Use dark theme"
+      >
+        <svg aria-hidden="true" class="icon-moon" viewBox="0 0 24 24">
+          <path
+            d="M20.5 15.2A8.8 8.8 0 0 1 8.8 3.5 8.8 8.8 0 1 0 20.5 15.2Z"
+          /></svg
+        ><svg aria-hidden="true" class="icon-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+          />
+        </svg>
+      </button>
+    </header>
+    <main id="main">
+      <header class="article-header shell">
+        <p class="eyebrow">2025 - Research</p>
+        <h1>Monitoring mushroom mycelial growth with AI</h1>
+        <p class="article-deck">
+          A computer-vision approach to monitoring king oyster mushroom mycelia
+          in liquid culture through measurements of aggregate count, size, and
+          growth over time.
+        </p>
+        <div class="article-meta">
+          <span>Role: AI and computer-vision development</span>
+          <span>SeoulTech</span>
+          <span>Co-authored research</span>
+        </div>
+        <div class="article-actions">
+          <a
+            class="button primary"
+            href="../assets/img/portfolio/mushroom-mycelia-poster.png"
+          >
+            Open full poster
+          </a>
+        </div>
+      </header>
+      <figure class="article-figure shell">
+        <img
+          src="../assets/img/portfolio/mushroom-mycelia-poster-display.webp"
+          alt="Conference poster presenting methods and results for AI-based mushroom mycelial growth monitoring"
+          width="1086"
+          height="1448"
+        />
+        <figcaption>
+          Development of an AI-based Image Analysis Platform for Growth
+          Monitoring of Mushroom Mycelia in Liquid Culture.
+        </figcaption>
+      </figure>
+      <div class="article-layout shell">
+        <article class="prose">
+          <h2 id="overview">Overview</h2>
+          <p>
+            This research developed an image-analysis platform for monitoring
+            mushroom mycelial growth in liquid culture. The work focused on the
+            king oyster mushroom (
+            <em>Pleurotus eryngii</em>
+            ) under submerged cultivation conditions.
+          </p>
+          <p>
+            Conventional growth assessment relies on sampling and dry-weight
+            measurement. Because that process is destructive and time-consuming,
+            the project examined whether cultivation images could provide a
+            practical way to measure growth between sampling points.
+          </p>
+          <h2 id="contribution">Research contribution</h2>
+          <p>
+            I worked on the pipeline that transformed cultivation imagery into
+            quantitative measurements of growth.
+          </p>
+          <ul>
+            <li>Image preprocessing and normalization.</li>
+            <li>Detection of mycelial aggregates.</li>
+            <li>Object tracking across cultivation time points.</li>
+            <li>Measurement of aggregate size and count.</li>
+            <li>Development of the AI-assisted monitoring workflow.</li>
+            <li>
+              Comparison of image-derived measurements with experimental
+              observations during validation.
+            </li>
+          </ul>
+          <h2 id="problem">The measurement problem</h2>
+          <p>
+            During liquid cultivation, mushroom mycelia form visible aggregates
+            or pellets rather than remaining as evenly suspended individual
+            cells. Their irregular shapes, overlap, and changing sizes make
+            growth difficult to represent with a single bulk measurement.
+          </p>
+          <p>
+            The vision system therefore needed to identify individual aggregates
+            consistently and turn their visible changes into measurements that
+            could be compared across cultivation conditions and time points.
+          </p>
+          <h2 id="pipeline">Analysis pipeline</h2>
+          <blockquote>
+            Video → image acquisition → preprocessing → aggregate detection →
+            tracking → quantitative growth analysis
+          </blockquote>
+          <p>
+            Cultivation images were captured over time and prepared for
+            analysis. The system then identified visible aggregates and produced
+            structured measurements of their count, size, and growth
+            progression.
+          </p>
+          <h2 id="validation">Experimental validation</h2>
+          <p>
+            The measurements were evaluated in cultivation experiments that
+            varied carbon sources, nitrogen sources, and optimized conditions.
+            Image-derived results were compared with experimental observations
+            to assess whether they reflected the observed growth patterns.
+          </p>
+          <p>
+            The poster reports that the platform captured changes in mycelial
+            growth and distinguished among the tested cultivation conditions.
+          </p>
+          <h2 id="authors">Research details</h2>
+          <p>
+            <strong>Full title:</strong>
+            Development of an AI-based Image Analysis Platform for Growth
+            Monitoring of Mushroom Mycelia in Liquid Culture
+          </p>
+          <p>
+            <strong>Authors:</strong>
+            Hyung Jin Cho, Stuart Asiimwe, Yun-A Shin, Kwang-Rim Baek, and
+            Seung-Oh Seo
+          </p>
+          <p>
+            <strong>Affiliation:</strong>
+            Department of Food Science and Biotechnology, Seoul National
+            University of Science and Technology, Seoul, Republic of Korea
+          </p>
+          <p>
+            <strong>Citation:</strong>
+            <br />
+            Cho, H. J., Asiimwe, S., Shin, Y.-A., Baek, K.-R., &amp; Seo, S.-O.
+            (2025).
+            <cite>
+              Development of an AI-based Image Analysis Platform for Growth
+              Monitoring of Mushroom Mycelia in Liquid Culture
+            </cite>
+            [Research poster].
+          </p>
+        </article>
+        <aside class="article-aside">
+          <h2>On this page</h2>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#contribution">Research contribution</a></li>
+            <li><a href="#problem">The problem</a></li>
+            <li><a href="#pipeline">Analysis pipeline</a></li>
+            <li><a href="#validation">Validation</a></li>
+            <li><a href="#authors">Research details</a></li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <nav class="footer-links" aria-label="Footer">
+          <a href="../work/index.html">Work</a>
+          <a href="index.html">Research</a>
+          <a href="../writing/index.html">Writing</a>
+          <a href="../about.html">About</a>
+        </nav>
+        <p class="copyright">
+          ©
+          <span data-year>2026</span>
+          Stuart Asiimwe.
+        </p>
+      </div>
+    </footer>
+    <script src="../assets/js/site.js"></script>
+  </body>
+</html>

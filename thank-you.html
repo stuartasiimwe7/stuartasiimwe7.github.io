@@ -1,16 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You</title>
-  <link href="assets/css/main.css" rel="stylesheet">
-</head>
-<body style="display:flex;align-items:center;justify-content:center;height:100vh;background:#f4fafd;">
-  <div style="text-align:center;">
-    <h1>Thank You!</h1>
-    <p>Your message has been sent successfully.<br>I appreciate you reaching out, I will get back to you as soon as possible.</p>
-    <a href="index.html" style="color:#149ddd;text-decoration:underline;">&larr; Back to Home</a>
-  </div>
-</body>
-</html> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Message sent - Stuart Asiimwe</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="assets/img/fin_favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script>
+      if (
+        localStorage.getItem("portfolio-theme") === "dark" ||
+        (!localStorage.getItem("portfolio-theme") &&
+          matchMedia("(prefers-color-scheme:dark)").matches)
+      )
+        document.documentElement.dataset.theme = "dark";
+    </script>
+  </head>
+  <body class="message-page">
+    <main class="message-card">
+      <p class="eyebrow">Message sent</p>
+      <h1>Thank you for reaching out.</h1>
+      <p>Your message is on its way. I’ll get back to you as soon as I can.</p>
+      <a class="button primary" href="index.html">Return home</a>
+    </main>
+    <script src="assets/js/site.js"></script>
+  </body>
+</html>

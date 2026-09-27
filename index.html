@@ -1,697 +1,359 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Stuart Asiimwe | Portfolio</title>
-  <!-- <link rel="icon" type="image/png" href="assets/img/fin_favicon.png"> -->
-  <meta name="description" content="An online portfolio">
-  <meta name="author" content="Stuart Asiimwe">
-  <meta name="keywords" content="Stuart Asiimwe, Stuart, Asiimwe, Stuart's Portfolio, Stuart's Resume, Stuart's CV, Stuart's Works, Stuart's Projects, Stuart's Contact, Asiimwe's Portfolio, Asiimwe's Resume, Asiimwe's CV, Asiimwe's Works, Asiimwe's Projects, Asiimwe's Contact">
-
-
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Updated: Jun 29 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body class="index-page">
-
-  <header id="header" class="header dark-background d-flex flex-column">
-    <i class="header-toggle d-xl-none bi bi-list"></i>
-
-    <div class="profile-img">
-      <img src="assets/img/small.jpg" alt="" class="img-fluid rounded-circle">
-    </div>
-
-    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
-      <h1 class="sitename">Stuart Asiimwe</h1>
-    </a>
-
-    <div class="social-links text-center">
-      <a href="https://www.twitter.com/stuartasiimwe7" class="twitter" title="Twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="https://github.com/stuartasiimwe7" class="github" title="GitHub"><i class="bi bi-github"></i></a>
-      <a href="https://www.linkedin.com/in/stuartasiimwe" class="linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-    </div>
-
-    <nav id="navmenu" class="navmenu">
-      <ul>
-        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
-        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-briefcase navicon"></i> Portfolio</a></li>
-        <li><a href="#skillset"><i class="bi bi-tools navicon"></i> Skill Set</a></li>
-        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
-        <li class="dropdown"><a href="#"><i class="bi bi-three-dots navicon"></i> <span>Blogs</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="https://independent.academia.edu/StuartAsimwe">Academia</a></li>
-            <li><a href="https://medium.com/@stuart7">Medium</a></li>
-            <li><a href="https://dev.to/stuartasiimwe7"> Dev.to</a></li>
-          </ul>
-        </li>
-        <li class="dropdown"></li>
-      </ul>
-    </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stuart Asiimwe - Software, research, and experiments</title>
+    <meta
+      name="description"
+      content="Software, computer vision research, physical-computing experiments, and writing by Stuart Asiimwe."
+    />
+    <link rel="canonical" href="https://stuartasiimwe.com/" />
+    <meta
+      property="og:title"
+      content="Stuart Asiimwe - Software, research, and experiments"
+    />
+    <meta
+      property="og:description"
+      content="An independent home for the things I build, investigate, and write about."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://stuartasiimwe.com/" />
+    <meta
+      property="og:image"
+      content="https://stuartasiimwe.com/assets/img/small.webp"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/img/fin_favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/site.css" />
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const name = "Stuart Asiimwe";
-        let i = 0;
-        const interval = setInterval(() => {
-        document.getElementById("dynamic-name").innerText = name.slice(0, i + 1);
-        i++;
-        if (i === name.length) {
-          clearInterval(interval);
-        }
-        }, 150); // typing speed here
-      });
-      </script>
-  </header>
-
-  <main class="main">
-
-    <!-- Hero Section removed -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume section">
-
-      <!-- Greeting moved from Hero -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Hello, I am</h2>
-        <h1 class="header-title"><span id="dynamic-name"></span></h1>
-        <h4 class="header-mono">Software Engineer | Computer Vision & Machine Learning</h4>
+      if (
+        localStorage.getItem("portfolio-theme") === "dark" ||
+        (!localStorage.getItem("portfolio-theme") &&
+          matchMedia("(prefers-color-scheme:dark)").matches)
+      )
+        document.documentElement.dataset.theme = "dark";
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Stuart Asiimwe",
+        "url": "https://stuartasiimwe.com",
+        "sameAs": [
+          "https://github.com/stuartasiimwe7",
+          "https://www.linkedin.com/in/stuartasiimwe",
+          "https://medium.com/@stuart7",
+          "https://dev.to/stuartasiimwe7"
+        ],
+        "knowsAbout": [
+          "Software engineering",
+          "Computer vision",
+          "Machine learning",
+          "Image analysis"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="nav-home" href="index.html" aria-label="Stuart Asiimwe, home">
+        <img src="assets/img/small.webp" alt="" width="900" height="600" />
+      </a>
+      <div class="nav-wrap">
+        <nav class="site-nav" data-nav aria-label="Primary">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="work/index.html">Work</a>
+          <a href="research/index.html">Research</a>
+          <a href="writing/index.html">Writing</a>
+          <a href="about.html">About</a>
+        </nav>
       </div>
+      <button
+        class="menu-toggle"
+        type="button"
+        data-menu-toggle
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+      <button
+        class="theme-toggle"
+        type="button"
+        data-theme-toggle
+        aria-label="Use dark theme"
+      >
+        <svg
+          aria-hidden="true"
+          class="icon-moon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M20.5 15.2A8.8 8.8 0 0 1 8.8 3.5 8.8 8.8 0 1 0 20.5 15.2Z"
+          /></svg
+        ><svg
+          aria-hidden="true"
+          class="icon-sun"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+          />
+        </svg>
+      </button>
+    </header>
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>
-            I’m a Software Engineer working across the full machine-learning lifecycle, from data preparation and model development to the production deployment of computer-vision and ML systems.<br>
-            I build, optimise and turn machine-learning models into secure, reliable, measurable, and maintainable production industrial software.
+    <main id="main">
+      <section class="hero shell">
+        <h1>I build reliable software systems.</h1>
+        <p class="hero-lead">
+          I’m a software engineer working across DevOps and applied AI, based in
+          Seoul.
+          <br />
+          I build computer vision systems, machine learning tools, and
+          production software that take AI models from experiments and integrate
+          them into reliable operational workflows.
         </p>
-      </div><!-- End Section Title -->
-      <div class="container section-title" data-aos="fade-up" data-aos-delay="100">
-        <div class="dropdown">
-          <button class="btn btn-primary btn-rounded dropdown-toggle" type="button" id="resumeDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="bi bi-printer pr-2"></i> Print Resume
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="resumeDropdown">
-            <li><a class="dropdown-item" href="#" download="Stuart_Resume_EN.jpg">English</a></li>
-            <li><a class="dropdown-item" href="#" download="Stuart_Resume_KR.pdf">Korean</a></li>
-          </ul>
+        <div class="social-row" aria-label="Social links">
+          <a
+            href="https://github.com/stuartasiimwe7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="M12 .7A11.5 11.5 0 0 0 8.4 23c.6.1.8-.3.8-.6v-2.2c-3.4.7-4.1-1.4-4.1-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0C17 4 18 4.3 18 4.3c.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v4c0 .4.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"
+              />
+            </svg>
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/stuartasiimwe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="M5.3 7.8H1.7V22h3.6V7.8ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22.3 13.8c0-4.3-2.3-6.3-5.4-6.3-2.5 0-3.6 1.4-4.2 2.3v-2H9.1V22h3.6v-7c0-1.9.4-3.7 2.7-3.7 2.3 0 2.3 2.1 2.3 3.8V22h3.6l1-8.2Z"
+              />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="mailto:stuartasiimwe7@naver.com">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path
+                d="M2 5.5h20v13H2v-13Zm1.5 1.3 8.5 6 8.5-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+            Email
+          </a>
+        </div>
+      </section>
+
+      <div class="photo-strip-wrap" aria-label="A glimpse of my work">
+        <div class="photo-strip">
+          <figure class="photo" style="--tilt: -3deg">
+            <img
+              src="assets/img/portfolio/project5.jpg"
+              alt="DiagnoseCloud computer-aided detection platform"
+              width="1120"
+              height="1120"
+            />
+          </figure>
+          <figure class="photo poster" style="--tilt: 2deg">
+            <img
+              src="assets/img/portfolio/mushroom-mycelia-poster-display.webp"
+              alt="Research poster about monitoring mushroom mycelial growth"
+              width="1086"
+              height="1448"
+            />
+          </figure>
+          <figure class="photo" style="--tilt: -2deg">
+            <img
+              src="assets/img/portfolio/blackboxml.webp"
+              alt="BlackBoxML project visual"
+              width="900"
+              height="600"
+            />
+          </figure>
+          <figure class="photo" style="--tilt: -2deg">
+            <img
+              src="assets/img/portfolio/project7.webp"
+              alt="DefectNet printed circuit board defect detection project visual"
+              loading="lazy"
+              width="850"
+              height="579"
+            />
+          </figure>
         </div>
       </div>
 
-      <div class="container">
-
-        <div class="row">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Summary</h3>
-
-            <div class="resume-item pb-0">
-              <h4>Stuart Asiimwe</h4>
-              <p><em>Software Engineer with 5+ years of experience designing and developing software solutions.</em></p>
-              <ul>
-                <li>Seoul, South Korea</li>
-                <li>(010) 8308-48xx</li>
-                <li>stuartasiimwe7@naver.com</li>
-              </ul>
+      <section
+        class="home-grid shell"
+        aria-label="Work highlights and contact information"
+      >
+        <div class="feed">
+          <h2 class="home-section-title">Highlights</h2>
+          <article class="feed-item">
+            <p class="feed-meta">Research - 2026</p>
+            <h2>Reconstructing historical XFS filesystems</h2>
+            <p>
+              An ongoing study of read only, provenance preserving recovery of
+              historical inode, namespace, extent, and payload evidence from
+              reformatted XFS volumes.
+            </p>
+            <a class="read-link" href="research/xfs-reconstruct.html">
+              Read the research
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <article class="feed-item">
+            <p class="feed-meta">Open source - 2026</p>
+            <h2>OpenHanji</h2>
+            <p>
+              A Python parser for reading HWPX documents into typed objects and
+              converting them to JSON, Markdown, or plain text for search, RAG,
+              and backend systems.
+            </p>
+            <div class="feed-links">
+              <a
+                class="read-link"
+                href="https://pypi.org/project/openhanji/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PyPI
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="read-link"
+                href="https://openhanji.readthedocs.io/en/latest/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Documentation
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
-            <!-- End Resume Item -->
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Computer Science</h4>
-              <h5>2023 - 2025</h5>
-              <p><em>Hanyang University, Seoul, South Korea</em></p>
-              <ul class="subtitle">
-                <li>Advancing the field of Machine Learning by designing custom algorithms for explainable Artificial Intelligence (xAI).</li>
-                <li>Pioneered cutting-edge research in adversarial machine learning.</li>
-                <li>Published research work at International symposiums and journals, contributing novel machine learning techniques within industry and academia.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Bachelor of Computer Science</h4>
-              <h5>2017 - 2021</h5>
-              <p><em>Ndejje University, Kampala, Uganda</em></p>
-              <ul class="subtitle">
-                <li><b>Graduated Top of the Class — 1<sup>st</sup> Class Honors</b></li>
-                <li>Algorithms, data structures, systems programming, and software architecture.</li>
-                <li>Fluent in Python, C++, and JavaScript.</li>                
-                <li>Deep Learning(CV): Invasive Ductal Carcinoma (IDC) Breast Cancer Detection using Mammograms.</li>
-              </ul>
+          </article>
+          <article class="feed-item">
+            <p class="feed-meta">Open source - 2025</p>
+            <h2>BlackBoxML</h2>
+            <p>
+              A Python toolkit for tracking machine learning experiments,
+              metrics, parameters, and artifacts without adding a heavyweight
+              platform.
+            </p>
+            <div class="feed-links">
+              <a
+                class="read-link"
+                href="https://pypi.org/project/blackboxml/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PyPI
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="read-link"
+                href="https://blackboxml.readthedocs.io/en/latest/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Documentation
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
-            <!-- End Resume Item -->
-
-            <div class="resume-item">
-                <h5>English :</h5>
-                <p><em>Native/Bilingual Proficiency</em></p>
-                <div class="progress mb-3">
-                  <div class="progress-bar bg-danger" role="progressbar" title="English proficiency" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
-                </div>
-
-                <h5>Korean :</h5>
-                <p><em>Conversational/Business Proficiency</em></p>
-                <div class="progress mb-3">
-                  <div class="progress-bar bg-danger" role="progressbar" title="Korean proficiency" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 88%;"></div>
-                </div>
-            </div>
-
-          </div>
-          <!-- End Resume Item -->
-          <!-- Professional Experience -->
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>AI Software Engineer / Lead AI Developer</h4>
-              <h5>December 2025 - Present</h5>
-              <p><em>Quantum Star, Seoul, South Korea</em></p>
-              <p><em>Leading the design, development and deployment of industrial computer-vision systems for smart factory.</em></p>
-              <ul class="subtitle">
-                <li>AI-powered solutions for extracting and interpreting engineering technical drawings</li>
-                <li>PPE Compliance system for CCTV monitoring workplace safety in industrial environments.</li>
-                <li>Integrated AI services with upstream MES/ERP systems' operational data and business processes.</li>
-                <li>CI/CD pipelines for automated testing and deployment of Software and AI models.</li>
-                <li>Retrieval-Augmented Generation(RAG) systems for enhanced natural language processing.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>AI Software Engineer</h4>
-              <h5>2025/03 - 2025/10</h5>
-              <p><em>SeoulTech, Seoul, South Korea</em></p>
-              <p><em>Pioneering research and development of deep-learning models and end-to-end ML pipelines, translating biotechnology scientific research into reliable and usable softwareapplications.</em></p>
-              <ul class="subtitle">
-                <li>Microscopy image analysis platform, automating detection, segmentation, and bacterial growth-phase estimation, removing the need for manual counting and labeling.</li>
-                <li>Led development of an end-to-end pipeline for seaweed detection and tracking on large-scale video and image datasets, tripling batch processing throughput and cutting validation time by over 90% with automated reporting and QA.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Machine Learning Researcher</h4>
-              <h5>03/2023 - 02/2025</h5>
-              <p><em>Software Security Lab (HYU), Seoul, South Korea</em></p>
-              <p><em>Conducted research on advanced ML algorithms and model optimization using Python, TensorFlow, and PyTorch.</em></p>
-              <ul class="subtitle">
-                <li>AI-Based Cybersecurity, designing secure model training pipelines and feature engineering strategies for large heterogeneous datasets.</li>
-                <li>Designed the dynamic feature engineering Algorithm in ensemble classifiers, boosting threat analysis accuracy and model reliability (xAI) for Windows, IoT, and embedded systems; work was presented at the ICCSS 2024.</li>
-                <li>Conducted hands-on reverse engineering and security audits on IoT and embedded systems firmware and datasetsusing IDA Pro and Ghidra, achieving a 62% vulnerability detection rate.</li>
-              </ul>
-            </div><!-- End Resume Item -->
-
-            <div class="resume-item">
-              <h4>Software Engineer - Intern</h4>
-              <h5>05/2019 - 08/2019</h5>
-              <p><em>Stratcom, Kampala, Uganda</em></p>
-              <p><em>Contributed to the development, debugging and maintenance of web applications.</em></p>
-              <ul class="subtitle">
-              <li>Web Application Development</li>
-              <li>Embedded Systems Development</li>
-              <li>Debugging and Software Documentation</li>
-              </ul>
-            </div><!-- End Resume Item -->
-          </div>
-          <!-- End Professional Experience -->
-
+          </article>
+          <article class="feed-item">
+            <p class="feed-meta">Research - 2025</p>
+            <h2>Ensemble learning: Dynamic feature engineering with SHAP</h2>
+            <p>
+              A SHAP-guided method for identifying relevant, non-redundant
+              features and improving ensemble malware classification while
+              preserving model transparency.
+            </p>
+            <a
+              class="read-link"
+              href="https://hanyang.dcollection.net/common/orgView/200000828015"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Read the research
+              <span aria-hidden="true">↗</span>
+            </a>
+          </article>
         </div>
 
-      </div>
-
-    </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Explore a curated list of my featured projects and research—spanning Machine Learning, Research, and Software Engineering.</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-        <div class="isotope-layout" data-default-filter=".filter-app" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter=".filter-app" class="filter-active">ML</li>
-            <li data-filter=".filter-branding">SW Dev</li>
-            <li data-filter=".filter-books">Research</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-
-            <!-- ===== ML Projects (.filter-app) ===== -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project9.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>
-                    BlackBoxML
-                    <a href="https://pepy.tech/project/blackboxml" target="_blank" rel="noopener" title="Total downloads">
-                      <img src="https://static.pepy.tech/personalized-badge/blackboxml?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLUE&right_color=GREEN&left_text=Downloads" alt="PyPI Downloads" style="height: 16px; vertical-align: middle; margin-left: 6px;">
-                    </a>
-                  </h4>
-                  <p>An open-source machine-learning experiment-tracking package for recording and organizing training runs, metrics, and results. Published on <a href="https://pypi.org/project/blackboxml/">PyPI</a>.</p>
-                  <div class="badges" style="margin: 6px 0 2px 0; display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-                    <a href="https://badge.fury.io/py/blackboxml" target="_blank" rel="noopener" title="PyPI version">
-                      <img src="https://badge.fury.io/py/blackboxml.svg" alt="PyPI version" style="height: 18px;">
-                    </a>
-                      <a href="https://pypi.org/project/blackboxml/" target="_blank" rel="noopener" title="Supported Python versions">
-                      <img src="https://img.shields.io/pypi/pyversions/blackboxml.svg" alt="Python versions" style="height: 18px;">
-                    </a>
-                      <a href="https://github.com/stuartasiimwe7/blackboxml/actions/workflows/pages/pages-build-deployment" target="_blank" rel="noopener" title="Deployment status">
-                      <img src="https://github.com/stuartasiimwe7/blackboxml/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Deployment status" style="height: 18px;">
-                    </a>
-                  </div>
-                  <a href="https://github.com/stuartasiimwe7/blackboxml" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project7.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>DefectNet</h4>
-                  <p>A RESTful API for automated detection of defects in printed circuit boards (PCBs) using YOLOv5 deep learning models, built with FastAPI.</p>
-                  <div class="portfolio-badges">
-                    <a href="https://www.python.org/downloads/" target="_blank" rel="noopener" title="Python runtime">
-                      <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="Python 3.8+ badge">
-                    </a>
-                    <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener" title="MIT License">
-                      <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License badge">
-                    </a>
-                    <a href="https://github.com/stuartasiimwe7/DefectNet/actions/workflows/tests.yml" target="_blank" rel="noopener" title="Automated tests status">
-                      <img src="https://github.com/stuartasiimwe7/DefectNet/actions/workflows/tests.yml/badge.svg" alt="DefectNet test status badge">
-                    </a>
-                    <a href="https://github.com/stuartasiimwe7/DefectNet/actions/workflows/ci-cd.yml" target="_blank" rel="noopener" title="CI/CD pipeline status">
-                      <img src="https://github.com/stuartasiimwe7/DefectNet/actions/workflows/ci-cd.yml/badge.svg" alt="DefectNet CI/CD status badge">
-                    </a>
-                  </div>
-                  <a href="assets/img/portfolio/project7.png" title="DefectNet" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/DefectNet" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Python via Bioinformatics</h4>
-                    <p>
-                    An interactive Python tutorial and toolkit for bioinformatics, featuring hands-on examples in sequence analysis, data visualization, and algorithmic problem-solving.
-                    </p>
-                  <a href="assets/img/portfolio/project2.jpg" title="Illustrating Python via Bioinformatics" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/Illustrating-Python-via-Bioinformatics" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- ===== SW Dev Projects (.filter-branding) ===== -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project4.png" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>AWS Inventory Manager</h4>
-                  <p>A scalable inventory management dashboard built with Next.js, designed to streamline inventory processes for businesses of all sizes.</p>
-                  <a href="assets/img/portfolio/project4.png" title="AWS Inventory Manager" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/AWSInventoryManager" title="GitHub" class="details-link" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/frontend1.png" class="img-fluid" alt="System Pulse dashboard overview">
-                <div class="portfolio-info">
-                  <h4>System Pulse</h4>
-                  <p>
-                    <a href="https://github.com/stuartasiimwe7/system_pulse" target="_blank" rel="noopener">@stuartasiimwe7/system_pulse</a>
-                    &mdash; A full-stack monitoring and observability platform built with FastAPI and Next.js, designed to provide real-time system insights and business intelligence for modern applications.
-                  </p>
-                  <div class="portfolio-badges">
-                    <a href="https://python.org" target="_blank" rel="noopener" title="Python runtime">
-                      <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python 3.8+ badge">
-                    </a>
-                    <a href="https://fastapi.tiangolo.com" target="_blank" rel="noopener" title="FastAPI framework docs">
-                      <img src="https://img.shields.io/badge/FastAPI-0.100+-green.svg" alt="FastAPI badge">
-                    </a>
-                    <a href="https://nextjs.org" target="_blank" rel="noopener" title="Next.js framework docs">
-                      <img src="https://img.shields.io/badge/Next.js-14+-black.svg" alt="Next.js badge">
-                    </a>
-                    <a href="https://www.typescriptlang.org" target="_blank" rel="noopener" title="TypeScript language">
-                      <img src="https://img.shields.io/badge/TypeScript-5.0+-blue.svg" alt="TypeScript badge">
-                    </a>
-                    <a href="https://www.docker.com" target="_blank" rel="noopener" title="Docker platform">
-                      <img src="https://img.shields.io/badge/Docker-Enabled-blue.svg" alt="Docker badge">
-                    </a>
-                    <a href="https://prometheus.io" target="_blank" rel="noopener" title="Prometheus monitoring">
-                      <img src="https://img.shields.io/badge/Prometheus-Monitoring-orange.svg" alt="Prometheus badge">
-                    </a>
-                    <a href="https://grafana.com" target="_blank" rel="noopener" title="Grafana dashboards">
-                      <img src="https://img.shields.io/badge/Grafana-Dashboards-red.svg" alt="Grafana badge">
-                    </a>
-                    <a href="LICENSE" target="_blank" rel="noopener" title="MIT License">
-                      <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License badge">
-                    </a>
-                  </div>
-                  <a href="assets/img/portfolio/frontend2.png" title="System Pulse" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/system_pulse" title="GitHub" class="details-link" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Python ChatBot</h4>
-                  <p>A conversational AI chatbot built with Python and TensorFlow, designed to assist users in various tasks through natural language processing.</p>
-                  <a href="assets/img/portfolio/project3.jpg" title="Python ChatBot" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/Python-Chatbot" title="More Details" class="details-link" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project5.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>DiagnoseCloud</h4>
-                    <p>
-                    DiagnoseCloud is a cloud-based platform for automated medical image analysis. It uses deep learning to assist radiologists in detecting and diagnosing breast cancer from mammograms - see research publications <a href="https://www.academia.edu/45485486/Cognitive_Computer_Aided_Detection_of_Breast_Cancer_Using_Mammograms" target="_blank" rel="noopener">here</a>.
-                    </p>
-                  <a href="assets/img/portfolio/project5.jpg" title="DiagnoseCloud" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.academia.edu/45485486/Cognitive_Computer_Aided_Detection_of_Breast_Cancer_Using_Mammograms" title="Academia" class="details-link" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project6.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Cloud Security Monitoring API</h4>
-                  <p>A RESTful API for monitoring cloud infrastructure security, providing real-time alerts and compliance reporting.</p>
-                  <a href="assets/img/portfolio/project6.jpg" title="Cloud Security Monitoring API" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/Cloud-Security-Monitoring-API" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project8.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>HanGo</h4>
-                  <p>A comprehensive and user-friendly cross-platform application built with Flutter.</p>
-                  <a href="assets/img/portfolio/project8.jpg" title="HanGo" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://github.com/stuartasiimwe7/HanGo" title="GitHub" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <!-- ===== Research & Publications (.filter-books) ===== -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project11.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Dynamic Feature Selection Algorithm</h4>
-                  <p>In this work, I propose an algorithm that uses a concept from game theory, SHAP values, to guide feature selection in ML ensemble classifiers, aiming to improve classification accuracy while maintaining model transparency.</p>
-                  <a href="assets/img/portfolio/project11.jpg" title="Dynamic Feature Selection algorithm" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://hanyang.dcollection.net/common/orgView/200000828015" title="More Details" class="details-link" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/project10.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Cognitive Computer-Aided Detection of Breast Cancer Using Mammograms</h4>
-                  <p>A comprehensive study on the use of AI in mammogram analysis for breast cancer detection.</p>
-                  <a href="assets/img/portfolio/project10.jpg" title="Cognitive Computer-Aided Detection of Breast Cancer" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://www.academia.edu/45485486/Cognitive_Computer_Aided_Detection_of_Breast_Cancer_Using_Mammograms" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/research.png" class="img-fluid" alt="SHAP-Based Feature Selection research visual">
-                <div class="portfolio-info">
-                  <h4>International Conference on Convergent and Smart Systems</h4>
-                  <p>
-                    Given the complexity of huge datasets, not all features contribute equally to classification performance—this work proposes a SHAP-guided methodology that identifies and retains only the most relevant and non-redundant features.
-                  </p>
-                  <p class="portfolio-meta">
-                    ICCSS 2024 Proceedings, Pages 182-190 · Jul 5, 2024
-                  </p>
-                  <a href="assets/img/portfolio/research.png" title="SHAP-Based Feature Selection" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://piu.ac.ke/conference/proceedings/2024%20ICCSS%20Proceeding%20v6.pdf" title="ICCSS 2024 Proceedings" class="details-link" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Services Section -->
-    <section id="skillset" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Skill Set</h2>
-        <p>I have experience using but not limited to the following technologies:</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-code-slash"></i></div>
-            <div>
-              <h4 class="title">Languages</a></h4>
-              <p class="description">C++, Python, JavaScript</p>
+        <aside class="sidebar">
+          <section class="side-card">
+            <div class="side-card-header">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" />
+              </svg>
+              <h2>How I work</h2>
             </div>
-          </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-layers"></i></div>
-            <div>
-              <h4 class="title">Frontend</a></h4>
-              <p class="description">React, Next.js</p>
+            <p>
+              From prototype to production, I design software, integrate models,
+              automate delivery, and build observability into the systems I
+              ship.
+            </p>
+            <a class="read-link" href="about.html">
+              More about my approach
+              <span aria-hidden="true">→</span>
+            </a>
+          </section>
+          <section class="side-card">
+            <div class="side-card-header">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M3 6h18v12H3zM3 7l9 6 9-6" />
+              </svg>
+              <h2>Have a problem to solve?</h2>
             </div>
-          </div><!-- End Service Item -->
+            <p>
+              I'm open to working together on software products, production
+              infrastructure, computer vision systems, and applied AI research.
+            </p>
+            <a class="read-link" href="contact.html">
+              Start a conversation
+              <span aria-hidden="true">→</span>
+            </a>
+          </section>
+        </aside>
+      </section>
+    </main>
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-hdd-network"></i></div>
-            <div>
-              <h4 class="title">Backend</a></h4>
-              <p class="description">FastAPI, Node.js with Express, REST APIs, Redis, Nginx</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-database"></i></div>
-            <div>
-              <h4 class="title">Databases</a></h4>
-              <p class="description">MySQL, PostgreSQL +pgvector</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-cpu"></i></div>
-            <div>
-              <h4 class="title">AI & Machine Learning</a></h4>
-              <p class="description">TensorFlow, PyTorch, Scikit-learn, OpenCV, ONNX, CUDA</p>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-cloud-arrow-up"></i></div>
-            <div>
-              <h4 class="title">Cloud & DevOps</a></h4>
-              <p class="description">AWS, Docker, Kubernetes, Git, GitHub Actions CI/CD, self-hosted runners, TDD, Prometheus, Grafana</p>
-            </div>
-          </div><!-- End Service Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Feel free to reach out for collaboration, questions, or professional connections. I look forward to hearing from you!</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-5">
-
-            <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h3>Address</h3>
-                  <p>222 Wangsimni-ro, Seongdong-gu, Seoul, 04763 </p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-                <i class="bi bi-telephone flex-shrink-0"></i>
-                <div>
-                  <h3>Call Me</h3>
-                  <p>+82 10 8308 4870</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h3>Email Me</h3>
-                  <p>stuartasiimwe7@naver.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <iframe src="https://www.google.com/maps?q=222+Wangsimni-ro,+Seongdong-gu,+Seoul,+04763&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-
-          <div class="col-lg-7">
-            <form action="https://formspree.io/f/xldlgwlz" method="POST" class="php-email-form">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-              <input type="hidden" name="_redirect" value="thank-you.html">
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
-
-  </main>
-
-  <footer id="footer" class="footer position-relative light-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>
-          <script>document.write(new Date().getFullYear())</script> © <span>Copyright</span> <strong class="px-1 sitename">Stuart Asiimwe</strong> <span>All Rights Reserved</span
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <nav class="footer-links" aria-label="Footer">
+          <a href="work/index.html">Work</a>
+          <a href="research/index.html">Research</a>
+          <a href="writing/index.html">Writing</a>
+          <a href="about.html">About</a>
+        </nav>
+        <p class="copyright">
+          ©
+          <span data-year>2026</span>
+          Stuart Asiimwe. Built as a living workshop.
         </p>
       </div>
-      <div class="text-center" style="font-size: 12px; opacity: 0.85;">
-        <!-- Visits: <span id="visit-count">—(coming soon)</span> -->
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <script>
-// Clear the contact form fields after submit (before redirect)
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.querySelector('.php-email-form');
-  if (form) {
-    form.addEventListener('submit', function(e) {
-      // Let the form submit, then clear fields (for instant feedback)
-      setTimeout(function() {
-        form.reset();
-      }, 10); // Small delay to allow submission
-    });
-  }
-});
-</script>
-
-</body>
-
+    </footer>
+    <script src="assets/js/site.js"></script>
+  </body>
 </html>
