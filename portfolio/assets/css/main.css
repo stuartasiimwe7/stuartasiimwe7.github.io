@@ -10,6 +10,7 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
+
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -561,6 +562,8 @@ section,
   object-fit: cover;
   z-index: 1;
 }
+
+/* Neumorphic animated background for hero */
 
 .hero:before {
   content: "";
