@@ -1,0 +1,43 @@
+name: Publish Domain
+
+on:
+  push:
+    branches:
+      - deploy/domain
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-domain
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: domain-publishing
+      url: https://www.stuartasiimwe.com/
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Validate site
+        run: |
+          test -f domain/index.html
+          grep -qx 'www.stuartasiimwe.com' domain/CNAME
+
+      - name: Publish domain site
+        uses: peaceiris/actions-gh-pages@329bcc8f12caed2cefe5a5b80781499a6f3b361b
+        with:
+          deploy_key: ${{ secrets.DOMAIN_DEPLOY_KEY }}
+          external_repository: stuartasiimwe7/stuartasiimwe.com
+          publish_branch: gh-pages
+          publish_dir: ./domain
+          cname: www.stuartasiimwe.com
+          full_commit_message: publish domain
+          user_name: github-actions[bot]
+          user_email: 41898282+github-actions[bot]@users.noreply.github.com
